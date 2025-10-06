@@ -1,6 +1,6 @@
 export const portfolioData = {
     personal: {
-      name: 'Almonzer Ahmed Fadl',
+      name: 'Almonzer Fadl',
       title: 'Electrical & Electronics Engineering Student | Software Developer',
       location: 'Cairo, Egypt',
       email: 'almonzerfadl@gmail.com',

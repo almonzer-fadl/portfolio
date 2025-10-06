@@ -5,6 +5,7 @@ A modern, sleek portfolio website, showcasing projects, experience, and personal
 ## Features
 
 - 🌙 Dark/Light theme toggle with smooth animations
+- 🌍 Internationalization support (English/Arabic)
 - 📱 Fully responsive design
 - ⚡ Built with Next.js 15 and TypeScript
 - 🎨 Custom FADL branding and logo integration

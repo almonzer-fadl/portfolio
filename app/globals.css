@@ -118,5 +118,36 @@
   }
   body {
     @apply bg-background text-foreground;
+    font-family: var(--font-source-serif), 'Times New Roman', 'Didot', 'Bodoni', serif;
+  }
+  
+  /* Luxury typography */
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-playfair), 'Times New Roman', 'Didot', 'Bodoni', serif;
+    font-weight: 400;
+    letter-spacing: 0.02em;
+  }
+  
+  /* RTL Support */
+  [dir="rtl"] {
+    direction: rtl;
+  }
+  
+  [dir="rtl"] .text-left {
+    text-align: right;
+  }
+  
+  [dir="rtl"] .text-right {
+    text-align: left;
+  }
+  
+  [dir="rtl"] .ml-auto {
+    margin-left: 0;
+    margin-right: auto;
+  }
+  
+  [dir="rtl"] .mr-auto {
+    margin-right: 0;
+    margin-left: auto;
   }
 }

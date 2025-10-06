@@ -2,7 +2,7 @@
 
 ## Overview
 
-This documentation provides a comprehensive guide to building a modern, hireable portfolio website inspired by the best elements from top developer portfolios. The portfolio combines sleek design, smooth animations, and professional presentation to showcase Almonzer Ahmed Fadl's skills and experience.
+This documentation provides a comprehensive guide to building a modern, hireable portfolio website inspired by the best elements from top developer portfolios. The portfolio combines sleek design, smooth animations, and professional presentation to showcase Almonzer Fadl's skills and experience.
 
 ## Design Inspiration & Features
 
@@ -238,7 +238,7 @@ export function Hero() {
           transition={{ duration: 0.8, delay: 0.2 }}
           className="text-4xl md:text-6xl font-bold mb-4"
         >
-          Almonzer Ahmed Fadl
+          Almonzer Fadl
         </motion.h1>
         
         <motion.p
@@ -903,7 +903,7 @@ import { ScrollReveal, Parallax, StaggeredList } from 'react-bits'
 ```typescript
 export const portfolioData = {
   personal: {
-    name: 'Almonzer Ahmed Fadl',
+    name: 'Almonzer Fadl',
     title: 'Electrical & Electronics Engineering Student | Software Developer',
     location: 'Cairo, Egypt',
     email: 'almonzerfadl@gmail.com',
