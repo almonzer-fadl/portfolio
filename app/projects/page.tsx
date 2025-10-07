@@ -4,58 +4,7 @@ import { Footer } from '@/components/layout/footer'
 import { motion } from 'framer-motion'
 import { ExternalLink, Github, Star } from 'lucide-react'
 import Link from 'next/link'
-
-// Projects data
-const projects = [
-  {
-    title: 'Enterprise Software Suite',
-    description: 'Comprehensive business management system with real-time analytics and reporting.',
-    tech: ['React', 'Node.js', 'PostgreSQL', 'TypeScript'],
-    github: 'https://github.com/username/project1',
-    live: 'https://project1.com',
-    featured: true
-  },
-  {
-    title: 'FADL Branding System',
-    description: 'Professional logo design and brand identity created at age 16.',
-    tech: ['Design', 'Branding', 'Identity', 'Adobe Creative Suite'],
-    github: null,
-    live: null,
-    featured: true
-  },
-  {
-    title: 'Jazz 2.0 AI Assistant',
-    description: 'Personal AI assistant with memory, speech recognition, and internet capabilities.',
-    tech: ['AI/ML', 'Python', 'Speech Recognition', 'LLM'],
-    github: 'https://github.com/username/jazz-ai',
-    live: null,
-    featured: false
-  },
-  {
-    title: 'E-Commerce Platform',
-    description: 'Full-stack e-commerce solution with payment integration and admin dashboard.',
-    tech: ['Next.js', 'Stripe', 'MongoDB', 'Tailwind CSS'],
-    github: 'https://github.com/username/ecommerce',
-    live: 'https://ecommerce-demo.com',
-    featured: true
-  },
-  {
-    title: 'Task Management App',
-    description: 'Collaborative task management tool with real-time updates and team features.',
-    tech: ['React', 'Socket.io', 'Express', 'PostgreSQL'],
-    github: 'https://github.com/username/taskapp',
-    live: null,
-    featured: false
-  },
-  {
-    title: 'Weather Dashboard',
-    description: 'Beautiful weather application with location-based forecasts and interactive maps.',
-    tech: ['Vue.js', 'OpenWeather API', 'Chart.js', 'PWA'],
-    github: 'https://github.com/username/weather',
-    live: 'https://weather-demo.com',
-    featured: false
-  }
-]
+import { allProjects } from '@/lib/data'
 
 export default function ProjectsPage() {
   return (
@@ -68,7 +17,7 @@ export default function ProjectsPage() {
         className="pt-20"
       >
         {/* Projects Section */}
-        <section className="py-16 bg-gray-50 dark:bg-gray-900">
+        <section className="py-16">
           <div className="max-w-6xl mx-auto px-4">
             <motion.h1
               initial={{ opacity: 0, y: 30 }}
@@ -80,7 +29,7 @@ export default function ProjectsPage() {
             </motion.h1>
             
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-              {projects.map((project, index) => (
+              {allProjects.map((project, index) => (
                 <motion.div
                   key={index}
                   initial={{ opacity: 0, y: 30 }}
