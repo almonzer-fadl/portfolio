@@ -21,12 +21,20 @@ export const metadata: Metadata = {
   keywords: ["portfolio", "software developer", "electrical engineering", "react", "nextjs", "typescript"],
   authors: [{ name: "Almonzer Fadl" }],
   creator: "Almonzer Fadl",
+  icons: {
+    icon: [
+      { url: "/logos/logoBlack.png", media: "(prefers-color-scheme: light)" },
+      { url: "/logos/logoWhite.png", media: "(prefers-color-scheme: dark)" }
+    ],
+    shortcut: "/logos/logoBlack.png",
+    apple: "/logos/logoBlack.png",
+  },
   openGraph: {
     type: "website",
     locale: "en_US",
     url: "https://almonzerfadl.dev",
     title: "Almonzer Fadl - Portfolio",
-    description: "Electrical & Electronics Engineering Student | Software Developer",
+    description: "Software Developer",
     siteName: "Almonzer Fadl Portfolio",
   },
   twitter: {
