@@ -9,8 +9,10 @@ import { ThemeToggle } from '@/components/ui/theme-toggle'
 
 export default function Home() {
   return (
-    <main className="min-h-screen bg-white dark:bg-black">
-      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-5 lg:py-10">
+    <main className="min-h-screen bg-white dark:bg-black relative">
+      {/* Simple Grid Background */}
+      <div className="absolute inset-0 "></div>
+      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-5 lg:py-10 relative z-20">
         <div className="flex h-full flex-col gap-12 sm:gap-16 py-8 sm:py-12">
           <div id="home">
             <Hero />
@@ -32,7 +34,7 @@ export default function Home() {
       </div>
       
       {/* Bottom Navigation */}
-      <div className="fixed bottom-2 sm:bottom-4 left-1/2 -translate-x-1/2 transform">
+      <div className="fixed bottom-2 sm:bottom-4 left-1/2 -translate-x-1/2 transform z-50">
         <div className="flex w-full gap-0.5 sm:gap-1 rounded-lg sm:rounded-xl bg-muted/30 p-0.5 sm:p-1 backdrop-blur dark:shadow-[rgba(111,_109,_120,_0.1)_0px_0px_30px,_rgba(60,_57,_63,_0.4)_0px_0px_0px_1px]">
           <a data-id="Home" className="relative inline-flex" aria-selected="true" data-checked="true" href="#home">
             <div className="absolute inset-0 rounded-lg bg-foreground/10 dark:bg-background" style={{opacity: 1}}></div>

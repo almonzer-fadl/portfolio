@@ -1,4 +1,4 @@
-https://aymanechakar.vercel.app/
+https://aymanechzzzzakar.vercel.app/
 https://www.duyle.dev/
 https://www.eduardev.com/
 https://prasoon-mahawar.dev/
