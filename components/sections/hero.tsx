@@ -72,9 +72,9 @@ export function Hero() {
             </button>
           </a>
         </div>
-        <div className="flex w-fit items-center gap-2 self-end rounded-full bg-green-500/20 px-2 py-1 mt-4 sm:self-end">
-          <span className="block size-2 animate-pulse rounded-full bg-green-500"></span>
-          <span className="text-xs font-medium">Available for work</span>
+        <div className="mt-4 flex w-fit items-center gap-2 self-end rounded-full bg-red-500/20 px-2 py-1 sm:self-end">
+          <span className="block size-2 animate-pulse rounded-full bg-red-500"></span>
+          <span className="text-xs font-medium">Not available for work</span>
         </div>
       </div>
     </div>

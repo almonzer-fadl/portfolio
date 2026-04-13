@@ -18,7 +18,7 @@ const sourceSerif = Source_Serif_4({
 
 export const metadata: Metadata = {
   title: "Almonzer Fadl - Portfolio",
-  description: "Computer Science (Information Systems) Student | Software Developer | Available for work",
+  description: "Computer Science (Information Systems) Student | Software Developer | Not available for work",
   keywords: ["portfolio", "software developer", "computer science", "information systems", "react", "nextjs", "typescript"],
   authors: [{ name: "Almonzer Fadl" }],
   creator: "Almonzer Fadl",
