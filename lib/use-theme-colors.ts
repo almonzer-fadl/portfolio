@@ -22,15 +22,6 @@ export function useThemeColors() {
 
     observer.observe(body, { attributes: true, attributeFilter: ['class'] });
 
-    // Initial colors
-    const computedStyle = getComputedStyle(body);
-    setColors({
-      background: computedStyle.getPropertyValue('--background').trim(),
-      foreground: computedStyle.getPropertyValue('--foreground').trim(),
-      muted: computedStyle.getPropertyValue('--muted').trim(),
-      mutedForeground: computedStyle.getPropertyValue('--muted-foreground').trim(),
-    });
-
     return () => observer.disconnect();
   }, []);
 

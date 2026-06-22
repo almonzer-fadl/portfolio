@@ -1,13 +1,9 @@
 'use client'
 import { motion } from 'framer-motion'
-import Image from 'next/image'
-import { useTheme } from '@/lib/theme-context'
 
 export default function Loading() {
-  const { theme } = useTheme()
-
   return (
-    <div className="fixed inset-0 flex items-center justify-center bg-white dark:bg-black">
+    <div className="fixed inset-0 flex items-center justify-center bg-[#f1ecdf] text-[#172019]">
       <motion.div
         animate={{
           rotate: 360,
@@ -17,15 +13,8 @@ export default function Loading() {
           repeat: Infinity,
           ease: 'linear',
         }}
-      >
-        <Image
-          src={theme === 'light' ? '/logos/logoBlackTextNoBg.png' : '/logos/logoWhiteTextNoBg.png'}
-          alt="FADL Logo"
-          width={64}
-          height={64}
-          priority
-        />
-      </motion.div>
+        className="grid size-12 place-items-center rounded-full border border-black/15 border-t-black/70 font-mono text-[10px]"
+      >AF</motion.div>
     </div>
   )
 }

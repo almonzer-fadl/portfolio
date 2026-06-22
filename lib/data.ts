@@ -203,7 +203,7 @@ export const projects = [
     tech: ['nextjs', 'react', 'typescript', 'tailwind', 'nodejs', 'supabase'],
     github: 'https://github.com/almonzer-fadl/teramotors',
     live: 'https://www.teramotor.cc/',
-    image: '/images/teramotors.png/',
+    image: '/images/teramotors.png',
     featured: true,
 
     translations: {
@@ -242,7 +242,7 @@ export const projects = [
     tech: ['react', 'typescript', 'typescript', 'tailwind'],
     github: 'https://github.com/AAbosham/takkah-app',
     live: 'https://takkah.app/',
-    image: '/images/takkahapp.png/',
+    image: '/images/takkahapp.png',
     featured: true,
     translations: {
       ar: {
@@ -262,7 +262,7 @@ export const projects = [
     github: 'https://github.com/almonzer-fadl/teravisions-academy',
     live: 'https://teravisionsai.com/',
     featured: true,
-    image: '/images/tvacademy.png/',
+    image: '/images/tvacademy.png',
     translations: {
       ar: {
         title: 'أكاديمية تيرافيجنز: منصة تعليم إلكتروني',
@@ -286,7 +286,7 @@ export const allProjects = [
     github: 'https://github.com/almonzer-fadl/passportRenewSys',
     live: 'https://sdpassport.vercel.app/',
     featured: false,
-    image: '/images/passportrenew.png/',
+    image: '/images/passportrenew.png',
     translations: {
       ar: {
         title: 'نظام تجديد جواز السفر',
@@ -304,7 +304,7 @@ export const allProjects = [
     tech: ['code', 'javascript', 'nodejs', 'code'],
     github: 'https://github.com/almonzer-fadl/teralab',
     live: 'https://teralab.io/',
-    image: '/images/teralab.png/',
+    image: '/images/teralab.png',
     featured: false,
     translations: {
       ar: {

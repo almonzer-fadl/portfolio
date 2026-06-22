@@ -1,24 +1,29 @@
 import type { Metadata } from "next";
-import { Playfair_Display, Source_Serif_4 } from "next/font/google";
+import { Geist, Geist_Mono, Newsreader } from "next/font/google";
 import "./globals.css";
-import { ThemeProvider } from '@/lib/theme-context';
 import { I18nProvider } from './i18n-provider';
 
-const playfairDisplay = Playfair_Display({
-  variable: "--font-playfair",
+const geistSans = Geist({
+  variable: "--font-geist-sans",
   subsets: ["latin"],
   display: "swap",
 });
 
-const sourceSerif = Source_Serif_4({
-  variable: "--font-source-serif",
+const geistMono = Geist_Mono({
+  variable: "--font-geist-mono",
+  subsets: ["latin"],
+  display: "swap",
+});
+
+const newsreader = Newsreader({
+  variable: "--font-newsreader",
   subsets: ["latin"],
   display: "swap",
 });
 
 export const metadata: Metadata = {
-  title: "Almonzer Fadl - Portfolio",
-  description: "Computer Science (Information Systems) Student | Software Developer | Not available for work",
+  title: "Almonzer Fadl — Product Engineer & Builder",
+  description: "Product engineer in Kuala Lumpur building software systems, operational tools, and products from real business problems.",
   keywords: ["portfolio", "software developer", "computer science", "information systems", "react", "nextjs", "typescript"],
   authors: [{ name: "Almonzer Fadl" }],
   creator: "Almonzer Fadl",
@@ -34,14 +39,14 @@ export const metadata: Metadata = {
     type: "website",
     locale: "en_US",
     url: "https://almonzerfadl.dev",
-    title: "Almonzer Fadl - Portfolio",
-    description: "Software Developer",
-    siteName: "Almonzer Fadl Portfolio",
+    title: "Almonzer Fadl — Product Engineer & Builder",
+    description: "I build products from real operational problems.",
+    siteName: "Almonzer Fadl",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Almonzer Fadl - Portfolio",
-    description: "Computer Science (Information Systems) Student | Software Developer",
+    title: "Almonzer Fadl — Product Engineer & Builder",
+    description: "I build products from real operational problems.",
   },
   robots: {
     index: true,
@@ -66,13 +71,11 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body
-        className={`${playfairDisplay.variable} ${sourceSerif.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} ${newsreader.variable} antialiased`}
         suppressHydrationWarning
       >
         <I18nProvider>
-          <ThemeProvider>
-            <DynamicDirection>{children}</DynamicDirection>
-          </ThemeProvider>
+          <DynamicDirection>{children}</DynamicDirection>
         </I18nProvider>
       </body>
     </html>
